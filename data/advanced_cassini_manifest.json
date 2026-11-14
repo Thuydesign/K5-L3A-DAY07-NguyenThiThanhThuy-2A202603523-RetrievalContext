@@ -1,0 +1,72 @@
+{
+  "title": "CASSINI. Report on the Phase A study: Saturn Orbiter and Titan probe",
+  "publisher": "NASA Technical Reports Server (NTRS)",
+  "report_number": "19910008874",
+  "report_date": "1988-10",
+  "source_url": "https://ntrs.nasa.gov/citations/19910008874",
+  "download_url": "https://ntrs.nasa.gov/api/citations/19910008874/downloads/19910008874.pdf",
+  "accessed_date": "2026-11-14",
+  "distribution": "PUBLIC",
+  "ntrs_rights_determination": "GOV_PUBLIC_USE_PERMITTED",
+  "ntrs_third_party_material_flag": false,
+  "rights_note": "NTRS record permits public use and reports no third-party material. Keep NASA/NTRS attribution and verify page-level notices before redistribution.",
+  "pdf_pages": 148,
+  "pages_with_extractable_text": 146,
+  "pages_without_extractable_text": [4, 148],
+  "extracted_text_characters": 355668,
+  "embedded_image_resources": 148,
+  "extracted_page_images": 148,
+  "pages_without_embedded_image": [],
+  "page_image_output": "starter/results/cassini-advanced/page-images/page-<n>.jpg",
+  "indexed_chunks": 463,
+  "chunk_configuration": {
+    "maximum_characters": 1000,
+    "overlap_characters": 120
+  },
+  "retrieval_configuration": {
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "embedding_dimensions": 384,
+    "vector_store": "Qdrant embedded local",
+    "selected_method": "tfidf",
+    "selected_top_k": 5,
+    "selected_context_budget_characters": 4000,
+    "initial_index_build_seconds": 52.84,
+    "reused_index_open_seconds": "6.64-7.66"
+  },
+  "dev_context_evidence": {
+    "selected_tfidf": "15/15 answerable cases",
+    "selected_hybrid": "15/15 answerable cases with top_k=8 and 6000 characters"
+  },
+  "test_retrieval_context_evidence": "24/24 answerable cases for selected TF-IDF configuration; retrieval-only, not agent answer quality",
+  "visual_processing": {
+    "method": "Preserve the embedded page scan as JPEG, prioritize exact Figure/Table caption chunks when a query names an ID, and attach up to three retrieved page scans to the vision-capable agent request.",
+    "ocr_or_image_embedding": false,
+    "limitation": "No standalone image embedding or OCR/layout extraction is used. The agent can inspect a visual page only when text/caption retrieval first finds that page."
+  },
+  "benchmark": {
+    "path": "data/cassini_advanced_questions.json",
+    "dev": {
+      "total": 18,
+      "answerable": 15,
+      "missing_evidence": 3
+    },
+    "test": {
+      "total": 30,
+      "answerable": 24,
+      "missing_evidence": 6,
+      "answerable_groups": {
+        "table": 6,
+        "image": 5,
+        "chart": 5,
+        "multi_hop": 4,
+        "text": 4
+      }
+    }
+  },
+  "text_occurrences": {
+    "figure": 123,
+    "table": 58
+  },
+  "processing_status": "Text chunks and page images extracted for the full 148-page PDF. Pages 4 and 148 are blank scans with no extractable text; the other 146 pages yielded 463 indexed chunks. Selected dev configuration achieved 15/15 context-evidence coverage, and the locked test retrieval achieved 24/24 for answerable cases. The agent supports OpenAI or a local Ollama endpoint; agent runs, human grading, and the 90% bonus threshold remain incomplete until a provider is configured and all 30 cases are audited.",
+  "local_artifacts_note": "The original PDF, page images, chunks, Qdrant index, and traces remain local under Downloads/starter/results and are not committed."
+}

@@ -1,0 +1,5 @@
+pypdf>=5,<7
+fastembed>=0.7,<1
+qdrant-client>=1.14,<2
+python-dotenv>=1,<2
+Pillow>=10.3,<14

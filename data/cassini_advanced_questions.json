@@ -1,0 +1,468 @@
+{
+  "benchmark": "Cassini Phase A multimodal retrieval",
+  "version": 1,
+  "source_id": "cassini_phase_a_19910008874",
+  "note": "The answer key and gold regions are for evaluation only and must not be passed to the agent. Each answerable case has one primary_group; multi_hop cases require every listed evidence item.",
+  "questions": [
+    {
+      "id": "cd01",
+      "split": "dev",
+      "primary_group": "table",
+      "question": "In Table 3.1, what is Phoebe's orbital semi-major axis, in Saturn radii?",
+      "answerable": true,
+      "expected_answer": "214.7 Saturn radii (Rs).",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 42, "evidence": "Table 3.1 : General characteristics of the Saturn's satellites", "region": "Table 3.1, Phoebe row, orbital semi-major axis (Rs) column: 214.7."}]
+    },
+    {
+      "id": "cd02",
+      "split": "dev",
+      "primary_group": "table",
+      "question": "According to Table 3.2, what is the planned flyby speed for asteroid 66 Maja?",
+      "answerable": true,
+      "expected_answer": "7 km/s.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 60, "evidence": "Table 3.2: Cassini asteroid candidates", "region": "Table 3.2, 66 Maja row, flyby speed (km/s) column: 7."}]
+    },
+    {
+      "id": "cd03",
+      "split": "dev",
+      "primary_group": "table",
+      "question": "What orbiter dry mass is listed in Table 5.1, including its unit?",
+      "answerable": true,
+      "expected_answer": "1,550.0 kg.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 82, "evidence": "Table 5.1: Cassini spacecraft mass allocation", "region": "Table 5.1, Orbiter dry mass row: 1550.0 kg."}]
+    },
+    {
+      "id": "cd04",
+      "split": "dev",
+      "primary_group": "table",
+      "question": "What delta-V allocation does Table 5.2 give for interplanetary navigation?",
+      "answerable": true,
+      "expected_answer": "75 m/s.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 82, "evidence": "Table 5.2: Manoeuvre budget", "region": "Table 5.2, Interplanetary navigation row: 75 m/s."}]
+    },
+    {
+      "id": "cd05",
+      "split": "dev",
+      "primary_group": "image",
+      "question": "In Figure 3.4, which two major Saturn rings are separated by the Cassini Division?",
+      "answerable": true,
+      "expected_answer": "The A ring and the B ring.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 32, "evidence": "Figure 3.4: Schematic of Saturn's ring system", "region": "Figure 3.4 ring schematic, labels A ring, Cassini Division, and B ring."}]
+    },
+    {
+      "id": "cd06",
+      "split": "dev",
+      "primary_group": "image",
+      "question": "Which Titan-related feature is explicitly labeled in Figure 3.10 of Saturn's inner magnetosphere?",
+      "answerable": true,
+      "expected_answer": "The Titan hydrogen torus.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 47, "evidence": "Figure 3.10: Meridional view of Saturn's inner magnetosphere", "region": "Figure 3.10 schematic and caption label the Titan hydrogen torus."}]
+    },
+    {
+      "id": "cd07",
+      "split": "dev",
+      "primary_group": "image",
+      "question": "In Figure 8.1, the MM-II Cassini spacecraft drawing, what is the label for the long magnetometer boom?",
+      "answerable": true,
+      "expected_answer": "The magnetometer boom.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 99, "evidence": "Figure 8.1: MM-II/ Gassini Spacecraft", "region": "Figure 8.1 spacecraft drawing, long boom label: MAGNETOMETER BOOM."}]
+    },
+    {
+      "id": "cd08",
+      "split": "dev",
+      "primary_group": "chart",
+      "question": "What are the first and last years shown on the development schedule in Figure 12.2?",
+      "answerable": true,
+      "expected_answer": "The schedule spans 1985 through 1996.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 136, "evidence": "Figure 12.2: Cassini summary development schedult", "region": "Figure 12.2 year headings run from 1985 at the left to 1996 at the right."}]
+    },
+    {
+      "id": "cd09",
+      "split": "dev",
+      "primary_group": "chart",
+      "question": "How many Titan atmospheric density profiles are shown in Figure 6.9, counting the nominal profile and the two extremes?",
+      "answerable": true,
+      "expected_answer": "Three profiles.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 89, "evidence": "Figure 6.9: Density profile as a function of altitude", "region": "Figure 6.9 shows the nominal density profile and two extreme profiles."}]
+    },
+    {
+      "id": "cd10",
+      "split": "dev",
+      "primary_group": "chart",
+      "question": "In Figure 4.1, the Data return profile during a typical high-activity period, what does the asterisk in the legend mean?",
+      "answerable": true,
+      "expected_answer": "Tape playback; it accommodates excess data from days 14, 16, and 17.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 66, "evidence": "Figure 4.1: Data return profile during a typical", "region": "Figure 4.1 legend, asterisk entry: Tape Playback accommodates excess data from days 14, 16, and 17."}]
+    },
+    {
+      "id": "cd11",
+      "split": "dev",
+      "primary_group": "multi_hop",
+      "evidence_mode": "all",
+      "question": "In Table 3.2, what flyby speed and month are listed for 66 Maja, and what exact day in that month does Section 6.2 give for the flyby?",
+      "answerable": true,
+      "expected_answer": "March 14, 1997, at a listed flyby speed of 7 km/s.",
+      "gold": [
+        {"source_id": "cassini_phase_a_19910008874", "page": 60, "evidence": "Table 3.2: Cassini asteroid candidates", "region": "Table 3.2, 66 Maja row: flyby speed 7 km/s and date MAR. 1997."},
+        {"source_id": "cassini_phase_a_19910008874", "page": 85, "evidence": "66 Maja, (radius = 39 km), on March 14, 1997", "region": "Section 6.2, text gives the exact planned 66 Maja flyby date."}
+      ]
+    },
+    {
+      "id": "cd12",
+      "split": "dev",
+      "primary_group": "multi_hop",
+      "evidence_mode": "all",
+      "question": "Table 4.1 lists the Imaging Science Subsystem (ISS); combine it with Figure 8.2, the MM-H simplified functional block diagram, to report the ISS mass and name the scan platform containing the imaging instruments.",
+      "answerable": true,
+      "expected_answer": "The ISS is allocated 36.3 kg; the instruments are grouped on the high-precision scan platform.",
+      "gold": [
+        {"source_id": "cassini_phase_a_19910008874", "page": 65, "evidence": "Table 4.1: Cassini Orbiter model payload", "region": "Table 4.1, Imaging Science Subsystem (ISS) row, Mass (kg) column: 36.3."},
+        {"source_id": "cassini_phase_a_19910008874", "page": 99, "evidence": "Figure 8.2: MM-H simplified functionnal block diagram", "region": "Figure 8.2 groups imaging instruments on the high precision scan platform."}
+      ]
+    },
+    {
+      "id": "cd13",
+      "split": "dev",
+      "primary_group": "multi_hop",
+      "evidence_mode": "all",
+      "question": "Using Table 9.1's total allocated Titan Probe mass and Table 9.2's total allocated Probe Support Subsystems mass, calculate the support share as a percentage to one decimal place.",
+      "answerable": true,
+      "expected_answer": "61.3 kg / 192.3 kg × 100 = 31.9%.",
+      "gold": [
+        {"source_id": "cassini_phase_a_19910008874", "page": 107, "evidence": "Table 9.1: Titan Probe Mass Budget (kg)", "region": "Table 9.1, TOTAL Probe Mass (allocated): 192.3 kg."},
+        {"source_id": "cassini_phase_a_19910008874", "page": 107, "evidence": "Table 9.2: Probe Support Subsystems Mass Budget", "region": "Table 9.2, TOTAL PSS Mass (allocated): 61.3 kg."}
+      ]
+    },
+    {
+      "id": "cd14",
+      "split": "dev",
+      "primary_group": "text",
+      "question": "At what speed and Mach number does the report say the probe decelerator is jettisoned?",
+      "answerable": true,
+      "expected_answer": "At about 400 m/s, or Mach 1.5.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 90, "evidence": "the entry speed will be reduced to Mach 1.5 (about 400 m/s) where the decelerator will be jettisoned", "region": "Atmospheric Entry paragraph."}]
+    },
+    {
+      "id": "cd15",
+      "split": "dev",
+      "primary_group": "text",
+      "question": "What radius does the trajectory discussion give for asteroid 66 Maja?",
+      "answerable": true,
+      "expected_answer": "39 km.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 85, "evidence": "66 Maja, (radius = 39 km)", "region": "Section 6.2 text states the planned 66 Maja flyby and its radius."}]
+    },
+    {
+      "id": "cd16",
+      "split": "dev",
+      "primary_group": "unanswerable",
+      "question": "What surface temperature did the Huygens probe actually measure on Titan?",
+      "answerable": false,
+      "expected_answer": "Abstain: the report contains no measured Titan surface temperature from the later Huygens mission.",
+      "absence_reason": "The report predates the mission and describes a planned Titan probe; it contains no post-flight surface measurements. Search temperature and probe passages, distinguishing model predictions from measurements."
+    },
+    {
+      "id": "cd17",
+      "split": "dev",
+      "primary_group": "unanswerable",
+      "question": "What salinity did Cassini measure in Enceladus's subsurface ocean?",
+      "answerable": false,
+      "expected_answer": "Abstain: no measured Enceladus ocean salinity is reported.",
+      "absence_reason": "This is a Phase A mission study, not a results report. Search Enceladus, ocean, and salinity references; any science discussion is prospective, not a measured post-flight result."
+    },
+    {
+      "id": "cd18",
+      "split": "dev",
+      "primary_group": "unanswerable",
+      "question": "What actual date did the Cassini mission end?",
+      "answerable": false,
+      "expected_answer": "Abstain: the report does not give the actual date Cassini's mission ended.",
+      "absence_reason": "The report is a pre-mission Phase A study and cannot document the later mission end event. Search mission-duration and end-of-mission passages; planned lifetime is not the actual end date."
+    },
+    {
+      "id": "ct01",
+      "split": "test",
+      "primary_group": "table",
+      "question": "What mass does Table 4.1 assign to the Imaging Science Subsystem (ISS)? Include the unit.",
+      "answerable": true,
+      "expected_answer": "36.3 kg.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 65, "evidence": "Table 4.1: Cassini Orbiter model payload", "region": "Table 4.1, Imaging Science Subsystem (ISS) row, Mass (kg) column: 36.3."}]
+    },
+    {
+      "id": "ct02",
+      "split": "test",
+      "primary_group": "table",
+      "question": "What data rate does Table 4.2 list for the Atmospheric Structure Instrument (ASI)? Include the unit.",
+      "answerable": true,
+      "expected_answer": "40 bps.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 75, "evidence": "Table 4.2: Cassini Probe model payload", "region": "Table 4.2, Atmospheric Structure Instrument (ASI) row, Data Rate (bps) column: 40."}]
+    },
+    {
+      "id": "ct03",
+      "split": "test",
+      "primary_group": "table",
+      "question": "What total injected spacecraft mass is listed in Table 5.1?",
+      "answerable": true,
+      "expected_answer": "5,127.4 kg.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 82, "evidence": "Table 5.1: Cassini spacecraft mass allocation", "region": "Table 5.1, Total injected mass row: 5127.4 kg."}]
+    },
+    {
+      "id": "ct04",
+      "split": "test",
+      "primary_group": "table",
+      "question": "What delta-V allocation is assigned to Saturn Orbit Insertion (SOI) in Table 5.2?",
+      "answerable": true,
+      "expected_answer": "984 m/s.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 82, "evidence": "Table 5.2: Manoeuvre budget", "region": "Table 5.2, Saturn Orbit Insertion (SOI) row: 984 m/s."}]
+    },
+    {
+      "id": "ct05",
+      "split": "test",
+      "primary_group": "table",
+      "question": "What total allocated mass does Table 9.1 give for the Titan Probe?",
+      "answerable": true,
+      "expected_answer": "192.3 kg.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 107, "evidence": "Table 9.1: Titan Probe Mass Budget (kg)", "region": "Table 9.1, TOTAL Probe Mass (allocated) row: 192.3 kg."}]
+    },
+    {
+      "id": "ct06",
+      "split": "test",
+      "primary_group": "table",
+      "question": "What Battery Capacity Energy Requirement is shown at the end of Table 9.3? Include the unit.",
+      "answerable": true,
+      "expected_answer": "1,370 watt-hours.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 108, "evidence": "Table 9.3: Probe System Energy and Power Budgets", "region": "Table 9.3, final Battery Capacity Energy Requirement row: 1370 watt-hours."}]
+    },
+    {
+      "id": "ct07",
+      "split": "test",
+      "primary_group": "image",
+      "question": "In Figure 3.2, which hydrogen layer is shown directly beneath the molecular hydrogen layer in Saturn's interior?",
+      "answerable": true,
+      "expected_answer": "The inhomogeneous metallic hydrogen layer.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 27, "evidence": "Figure 3.2: Schematic model of the Saturn interior", "region": "Figure 3.2 labels the inhomogeneous metallic H layer directly below molecular H."}]
+    },
+    {
+      "id": "ct08",
+      "split": "test",
+      "primary_group": "image",
+      "question": "Which of Saturn's main rings is outside the B ring in Figure 3.4?",
+      "answerable": true,
+      "expected_answer": "The A ring.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 32, "evidence": "Figure 3.4: Schematic of Saturn's ring system", "region": "Figure 3.4 labels the B and A rings in order, with the A ring outside the B ring among the main rings."}]
+    },
+    {
+      "id": "ct09",
+      "split": "test",
+      "primary_group": "image",
+      "question": "In Figure 3.10, which satellite does the caption key abbreviate as R?",
+      "answerable": true,
+      "expected_answer": "Rhea.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 47, "evidence": "R--Rhea, D--Dione", "region": "Figure 3.10 caption key states R = Rhea."}]
+    },
+    {
+      "id": "ct10",
+      "split": "test",
+      "primary_group": "image",
+      "question": "What antenna is labeled above the large dish in the Cassini spacecraft drawing, Figure 8.1?",
+      "answerable": true,
+      "expected_answer": "High gain antenna.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 99, "evidence": "Figure 8.1: MM-II/ Gassini Spacecraft", "region": "Figure 8.1 labels the high gain antenna above the large dish."}]
+    },
+    {
+      "id": "ct11",
+      "split": "test",
+      "primary_group": "image",
+      "question": "What label is printed on the three rectangular blocks on the left side of the bottom-view probe platform in Figure 9.8?",
+      "answerable": true,
+      "expected_answer": "BATTERIES.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 114, "evidence": "Figure 9.8: Probe experiment platform:bottom view", "region": "Figure 9.8 labels the three rectangular blocks on the left as BATTERIES."}]
+    },
+    {
+      "id": "ct12",
+      "split": "test",
+      "primary_group": "chart",
+      "question": "In Figure 4.1's data-return bar chart, which labeled day has the highest total data-return bar?",
+      "answerable": true,
+      "expected_answer": "Day 16.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 66, "evidence": "Figure 4.1: Data return profile during a typical", "region": "Figure 4.1 bars by day; the tallest total stacked bar is at day 16."}]
+    },
+    {
+      "id": "ct13",
+      "split": "test",
+      "primary_group": "chart",
+      "question": "What overall relationship does Figure 7.2 show between injection energy C3 and spacecraft-and-adapter mass?",
+      "answerable": true,
+      "expected_answer": "Mass decreases as injection energy C3 increases.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 97, "evidence": "Figure 7.2: Titan IV Centaur planetary performance", "region": "Figure 7.2 mass-versus-C3 curve slopes downward."}]
+    },
+    {
+      "id": "ct14",
+      "split": "test",
+      "primary_group": "chart",
+      "question": "Across the altitude range plotted in Figure 6.10, does Titan's thermal-wind profile rise or fall?",
+      "answerable": true,
+      "expected_answer": "It rises with altitude over the plotted range.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 90, "evidence": "Figure 6.10: Profile of Titan's thermal wind", "region": "Figure 6.10 curve rises with increasing altitude."}]
+    },
+    {
+      "id": "ct15",
+      "split": "test",
+      "primary_group": "chart",
+      "question": "What variable is on the horizontal axis of the Titan density profiles in Figure 6.9?",
+      "answerable": true,
+      "expected_answer": "Altitude in kilometers.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 89, "evidence": "Figure 6.9: Density profile as a function of altitude", "region": "Figure 6.9 horizontal axis is labeled Altitude in km."}]
+    },
+    {
+      "id": "ct16",
+      "split": "test",
+      "primary_group": "chart",
+      "question": "In Figure 3.1, what is the plotted vertical variable and its unit?",
+      "answerable": true,
+      "expected_answer": "Altitude Z, in kilometers (km).",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 20, "evidence": "Figure 3.1: Titan atmosphere thermal profile", "region": "Figure 3.1 vertical axis is labeled Z (KM)."}]
+    },
+    {
+      "id": "ct17",
+      "split": "test",
+      "primary_group": "multi_hop",
+      "evidence_mode": "all",
+      "question": "Combine Figure 3.7 with Table 3.1: which Saturnian satellite is largest, and what radius does Table 3.1 list for it?",
+      "answerable": true,
+      "expected_answer": "Titan is the largest; Table 3.1 lists its radius as 2,575 ± 2 km.",
+      "gold": [
+        {"source_id": "cassini_phase_a_19910008874", "page": 41, "evidence": "Figure 3.7: Comparison of Saturn's satellites sizes", "region": "Figure 3.7 caption identifies Titan as the largest satellite and compares it to Mercury."},
+        {"source_id": "cassini_phase_a_19910008874", "page": 42, "evidence": "Table 3.1 : General characteristics of the Saturn's satellites", "region": "Table 3.1, Titan row, Radius (km) column: 2575 ± 2 km."}
+      ]
+    },
+    {
+      "id": "ct18",
+      "split": "test",
+      "primary_group": "multi_hop",
+      "evidence_mode": "all",
+      "question": "Using Table 4.2 and Figure 9.8, identify RITO and state the mass assigned to that payload item.",
+      "answerable": true,
+      "expected_answer": "RITO is the Refraction Index of Titan Ocean surface-science item; the listed mass is 1.2 kg.",
+      "gold": [
+        {"source_id": "cassini_phase_a_19910008874", "page": 75, "evidence": "Table 4.2: Cassini Probe model payload", "region": "Table 4.2, Surface Science Package row: Refraction Index of Titan Ocean (RITO), mass 1.2 kg."},
+        {"source_id": "cassini_phase_a_19910008874", "page": 114, "evidence": "Figure 9.8: Probe experiment platform:bottom view", "region": "Figure 9.8 diagram labels the RITO item on the probe platform."}
+      ]
+    },
+    {
+      "id": "ct19",
+      "split": "test",
+      "primary_group": "multi_hop",
+      "evidence_mode": "all",
+      "question": "From Tables 9.1 and 9.2, what percentage of the allocated Titan Probe mass is the allocated Probe Support Subsystems mass? Round to one decimal place.",
+      "answerable": true,
+      "expected_answer": "31.9% (61.3 kg ÷ 192.3 kg × 100).",
+      "gold": [
+        {"source_id": "cassini_phase_a_19910008874", "page": 107, "evidence": "Table 9.1: Titan Probe Mass Budget (kg)", "region": "Table 9.1, TOTAL Probe Mass (allocated): 192.3 kg."},
+        {"source_id": "cassini_phase_a_19910008874", "page": 107, "evidence": "Table 9.2: Probe Support Subsystems Mass Budget", "region": "Table 9.2, TOTAL PSS Mass (allocated): 61.3 kg."}
+      ]
+    },
+    {
+      "id": "ct20",
+      "split": "test",
+      "primary_group": "multi_hop",
+      "evidence_mode": "all",
+      "question": "Using Figures 3.10 and 3.11, name the Titan-related feature in the inner-magnetosphere diagram and give the expected plasma-sheet hinge distance from Saturn.",
+      "answerable": true,
+      "expected_answer": "Titan hydrogen torus; the hinge is expected at about 30 Saturn radii (Rs).",
+      "gold": [
+        {"source_id": "cassini_phase_a_19910008874", "page": 47, "evidence": "Figure 3.10: Meridional view of Saturn's inner magnetosphere", "region": "Figure 3.10 caption names the Titan hydrogen torus."},
+        {"source_id": "cassini_phase_a_19910008874", "page": 49, "evidence": "Figure 3.11: A schematic view of Saturn's magnetosphere", "region": "Figure 3.11 and adjacent text mark the possible hinge point at about 30 Rs."}
+      ]
+    },
+    {
+      "id": "ct21",
+      "split": "test",
+      "primary_group": "text",
+      "question": "What maximum entry velocity does the report give at a reference altitude H of 1,000 km?",
+      "answerable": true,
+      "expected_answer": "7.120 km/s.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 90, "evidence": "The maximum entry velocity at H = 1000 km is 7.120 km/s", "region": "Atmospheric Entry paragraph."}]
+    },
+    {
+      "id": "ct22",
+      "split": "test",
+      "primary_group": "text",
+      "question": "At what altitude range does the report say peak Titan Probe entry decelerations occur?",
+      "answerable": true,
+      "expected_answer": "About 260–290 km altitude.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 90, "evidence": "Peak decelerations of up to", "region": "Atmospheric Entry paragraph states peak deceleration occurs at about 260-290 km altitude."}]
+    },
+    {
+      "id": "ct23",
+      "split": "test",
+      "primary_group": "text",
+      "question": "Which instrument is described as the only active science instrument during atmospheric entry?",
+      "answerable": true,
+      "expected_answer": "The Atmospheric Structure Instrument (ASI).",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 90, "evidence": "The only active science instrument during this atmospheric entry phase is the Atmospheric Structure Instrument", "region": "Atmospheric Entry paragraph."}]
+    },
+    {
+      "id": "ct24",
+      "split": "test",
+      "primary_group": "text",
+      "question": "In what atmospheric-descent phase do the first six probe instruments make most of their measurements?",
+      "answerable": true,
+      "expected_answer": "The subsonic descent phase.",
+      "gold": [{"source_id": "cassini_phase_a_19910008874", "page": 75, "evidence": "make most of their measurements during the subsonic descent phase", "region": "Section 4.2.1 text preceding Table 4.2."}]
+    },
+    {
+      "id": "ct25",
+      "split": "test",
+      "primary_group": "unanswerable",
+      "question": "On what exact date did the Cassini spacecraft actually launch?",
+      "answerable": false,
+      "expected_answer": "Abstain: the report does not state the actual Cassini launch date.",
+      "absence_reason": "The report is a 1988 Phase A study and discusses planned launch timing, not the actual later launch event. Search launch-related passages and distinguish plans from actual mission history."
+    },
+    {
+      "id": "ct26",
+      "split": "test",
+      "primary_group": "unanswerable",
+      "question": "On what date did the Huygens probe actually land on Titan?",
+      "answerable": false,
+      "expected_answer": "Abstain: the report contains no post-flight Huygens landing date.",
+      "absence_reason": "The Titan probe is prospective in this Phase A study; no actual Huygens landing is documented. Search the report for landing/arrival and verify context."
+    },
+    {
+      "id": "ct27",
+      "split": "test",
+      "primary_group": "unanswerable",
+      "question": "What mass of water did Cassini measure in the Enceladus plumes?",
+      "answerable": false,
+      "expected_answer": "Abstain: no measured Enceladus plume water mass is reported.",
+      "absence_reason": "The document is a mission design study, not a post-mission science result. Enceladus references describe planned observations, not in-situ measured plume mass."
+    },
+    {
+      "id": "ct28",
+      "split": "test",
+      "primary_group": "unanswerable",
+      "question": "How many Saturnian moons are confirmed today?",
+      "answerable": false,
+      "expected_answer": "Abstain: the report cannot establish the present-day number of confirmed Saturnian moons.",
+      "absence_reason": "The source predates modern discoveries and contains historical satellite context only; it has no present-day census. Verify all satellite lists and their dates."
+    },
+    {
+      "id": "ct29",
+      "split": "test",
+      "primary_group": "unanswerable",
+      "question": "What was the actual total cost of the Cassini mission at completion?",
+      "answerable": false,
+      "expected_answer": "Abstain: actual total mission cost at completion is not stated.",
+      "absence_reason": "This is a preliminary Phase A design study, not an after-action financial report. Search for cost/budget material and distinguish estimates from final actual cost."
+    },
+    {
+      "id": "ct30",
+      "split": "test",
+      "primary_group": "unanswerable",
+      "question": "What methane concentration did Huygens actually measure in Titan's atmosphere?",
+      "answerable": false,
+      "expected_answer": "Abstain: the report contains no measured methane concentration from Huygens on Titan.",
+      "absence_reason": "The report describes a planned probe before the flight and has no Huygens measurement results. Search methane/probe passages and verify they are forecasts or objectives rather than measured results."
+    }
+  ]
+}

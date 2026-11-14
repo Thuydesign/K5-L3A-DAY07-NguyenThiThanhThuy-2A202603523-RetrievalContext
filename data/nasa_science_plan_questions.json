@@ -1,0 +1,234 @@
+[
+  {
+    "id": "d01",
+    "split": "dev",
+    "question": "Which sources guide prioritization of NASA Science Mission Directorate activities?",
+    "answerable": true,
+    "expected_answer": "National Academies decadal surveys and other national priorities guide prioritization.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 4, "evidence": "Prioritization of these activities is guided by National Academies of Sciences, Engineering and Medicine (NASEM) Decadal Surveys and other national priorities"}]
+  },
+  {
+    "id": "d02",
+    "split": "dev",
+    "question": "What additional core value does SMD recognize alongside NASA's five core values?",
+    "answerable": true,
+    "expected_answer": "Leadership.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 4, "evidence": "as well as a sixth value of leadership"}]
+  },
+  {
+    "id": "d03",
+    "split": "dev",
+    "question": "What two broad impacts does the plan attribute to NASA's space research?",
+    "answerable": true,
+    "expected_answer": "Discovering the secrets of the universe and protecting and improving life on Earth and in space.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 6, "evidence": "we discover the secrets of the universe, and we protect and improve life on Earth and in space"}]
+  },
+  {
+    "id": "d04",
+    "split": "dev",
+    "question": "According to the plan, how do partnerships help SMD research?",
+    "answerable": true,
+    "expected_answer": "They enable new research approaches and build on past success.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 7, "evidence": "Partnerships enable new approaches to do research and enable us to build on past success"}]
+  },
+  {
+    "id": "d05",
+    "split": "dev",
+    "question": "Name the four cross-cutting science leadership priorities.",
+    "answerable": true,
+    "expected_answer": "Exploration and Scientific Discovery; Innovation; Interconnectivity and Partnerships; Inspiration.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 8, "evidence": "Exploration and Scientific Discovery, Innovation, Interconnectivity and Partnerships, and Inspiration"}]
+  },
+  {
+    "id": "d06",
+    "split": "dev",
+    "question": "Which components make up the balanced portfolio approach under Priority 1?",
+    "answerable": true,
+    "expected_answer": "Flight missions, research and analysis, technology development, and applications.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 9, "evidence": "flight missions, research and analysis, technology development, and applications"}]
+  },
+  {
+    "id": "d07",
+    "split": "dev",
+    "question": "Which disciplines does NASA's Astrobiology Program bring together to advance the search for life beyond Earth?",
+    "answerable": true,
+    "expected_answer": "Astrophysics, biological and physical sciences, heliophysics, and planetary sciences.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 9, "evidence": "collaborates across astrophysics, biological and physical sciences, heliophysics, and planetary sciences"}]
+  },
+  {
+    "id": "d08",
+    "split": "dev",
+    "question": "What did the 2023 plan say Artemis was preparing to do by 2024?",
+    "answerable": true,
+    "expected_answer": "Send the first woman and first person of color to the Moon.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 16, "evidence": "preparing to send the first woman and first person of color to the Moon by 2024"}]
+  },
+  {
+    "id": "d09",
+    "split": "dev",
+    "question": "According to the plan, what was the Artemis program's lunar exploration goal for 2028?",
+    "answerable": true,
+    "expected_answer": "Establish sustainable lunar exploration that would eventually lead to human missions to Mars.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 16, "evidence": "By 2028, the program plans to establish sustainable lunar exploration that will eventually lead to human missions to Mars"}]
+  },
+  {
+    "id": "d10",
+    "split": "dev",
+    "question": "How did SMD restructure the Exoplanet Research Program?",
+    "answerable": true,
+    "expected_answer": "As a cross-divisional program involving personnel and funding from all science divisions.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 17, "evidence": "restructured its Exoplanet Research Program to better function as a cross--divisional program involving personnel and funding from all science divisions"}]
+  },
+  {
+    "id": "d11",
+    "split": "dev",
+    "question": "What does SMD call cornerstones of a forward-looking scientific discovery program?",
+    "answerable": true,
+    "expected_answer": "Innovation and measured risk-taking.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 19, "evidence": "innovation and measured risk-taking are the cornerstones of a forward-looking program of scientific discovery"}]
+  },
+  {
+    "id": "d12",
+    "split": "dev",
+    "question": "What two actions did SMD take for high-risk, high-impact proposals not initially selected by disciplinary panels?",
+    "answerable": true,
+    "expected_answer": "It established a Blue-Ribbon Panel to re-examine them and launched a funding line in FY22 to catalyze and co-fund such awards.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 21, "evidence": "SMD established a Blue-Ribbon Panel to re-examine high-risk-/high-impact proposals that were not initially selected in disciplinary panels, and in FY22 launched a new funding line to catalyze and co-fund such potentially transformative research awards"}]
+  },
+  {
+    "id": "d13",
+    "split": "dev",
+    "question": "Approximately how many active international agreements and countries or regions does SMD report?",
+    "answerable": true,
+    "expected_answer": "Nearly 350 active agreements involving nearly 140 countries and regions.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 24, "evidence": "nearly 350 active international agreements involving nearly 140 countries and regions"}]
+  },
+  {
+    "id": "d14",
+    "split": "dev",
+    "question": "How many ROSES-2023 program elements were expected to have no due date?",
+    "answerable": true,
+    "expected_answer": "At least 10 program elements.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 25, "evidence": "in ROSES-2023, at least 10 program elements will have no due date"}]
+  },
+  {
+    "id": "d15",
+    "split": "dev",
+    "question": "What value-for-money outcome does the plan say should be used to evaluate commercial partnerships?",
+    "answerable": true,
+    "expected_answer": "Whether partnerships produce more science per dollar.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 26, "evidence": "more science per dollar"}]
+  },
+  {
+    "id": "d16",
+    "split": "dev",
+    "question": "How did SMD say dual-anonymous peer review affected equity in access to research funding?",
+    "answerable": true,
+    "expected_answer": "It quantitatively strengthened equity in access to research funding since its inception in 2020.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 28, "evidence": "quantitatively strengthened equity in access to research funding since its inception in 2020"}]
+  },
+  {
+    "id": "d17",
+    "split": "dev",
+    "question": "How many community engagement sites were initiated for the James Webb Space Telescope mission?",
+    "answerable": true,
+    "expected_answer": "Over 450 sites.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 30, "evidence": "over 450 community engagement sites were initiated across the United States"}]
+  },
+  {
+    "id": "d18",
+    "split": "dev",
+    "question": "What kind of content did SMD say it used to connect NASA work with people's everyday lives?",
+    "answerable": true,
+    "expected_answer": "Storytelling.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 30, "evidence": "We do these using techniques such as storytelling to help connect the work that NASA does to people’s everyday lives"}]
+  },
+  {
+    "id": "d19",
+    "split": "dev",
+    "question": "Which NASA resources can justify performing Internal Scientist Funding Model work in-house?",
+    "answerable": true,
+    "expected_answer": "Unique NASA facilities, capabilities, and/or skills.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 63, "evidence": "Utilizing unique NASA facilities, capabilities and/or skills"}]
+  },
+  {
+    "id": "d20",
+    "split": "dev",
+    "question": "What was the total value of awards made to multidisciplinary Astrobiology teams?",
+    "answerable": true,
+    "expected_answer": "More than $1 million in awards.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 69, "evidence": "Awards made to multidisciplinary teams totaled more than $1M"}]
+  },
+  {
+    "id": "d21",
+    "split": "dev",
+    "question": "What exact calendar date did Artemis IV launch?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The PDF discusses the Artemis program and historical plans but does not state an Artemis IV launch date."
+  },
+  {
+    "id": "d22",
+    "split": "dev",
+    "question": "What is the exact latitude and longitude of NASA Headquarters?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The PDF gives a Washington, DC mailing address but does not provide geographic coordinates."
+  },
+  {
+    "id": "t01",
+    "split": "test",
+    "question": "How many events did the James Webb community engagement sites host for launch?",
+    "answerable": true,
+    "expected_answer": "614 events.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 30, "evidence": "For launch, these sites hosted 614 events"}]
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "question": "By early FY22, how many CLPS lunar deliveries had NASA issued task orders for, and how many payloads did they total?",
+    "answerable": true,
+    "expected_answer": "Seven lunar surface deliveries totaling more than 40 payloads.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 37, "evidence": "a total of seven lunar surface deliveries totaling more than 40 payloads"}]
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "question": "What milestone did the Mars Sample Return program pass after completing Phase A activities in FY22?",
+    "answerable": true,
+    "expected_answer": "Key Decision Point B (KDP-B).",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 39, "evidence": "successfully passed its Key Decision Point B (KDP-B)"}]
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "question": "How many publications did the citizen science projects produce with citizen scientists named as co-authors?",
+    "answerable": true,
+    "expected_answer": "Over 190 publications.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 40, "evidence": "over 190 publications with citizen scientists as named co-authors"}]
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "question": "How many people registered for the Heliophysics 2050 Workshop?",
+    "answerable": true,
+    "expected_answer": "Over 1,150 registered attendees.",
+    "gold": [{"source_id": "nasa_science_plan_2020_2024_update", "page": 61, "evidence": "over 1,150 registered attendees"}]
+  },
+  {
+    "id": "t06",
+    "split": "test",
+    "question": "What was the exact dollar amount paid for each CLPS task order?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The PDF describes CLPS deliveries and payload totals but does not give a task-order-by-task-order price list."
+  },
+  {
+    "id": "t07",
+    "split": "test",
+    "question": "What was the measured altitude in kilometers of the International Space Station's orbit?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The PDF refers to research and facilities on the ISS but does not state its orbital altitude."
+  }
+]
